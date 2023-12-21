@@ -1,13 +1,17 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Patient List</title>
-    </head>
-    <body>
-    
-        <div class="col-md-7 ">
-            <h2>Details Of {{receptionist.name}}</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- Link to your external CSS file -->
+</head>
+<body>
+  <div class="background-image">
+    <div class="details-container">
+      <div class="details">
+        <h2> Receptionist Details:{{receptionist.name}} </h2>
         <div>
             <label><b>Receptionist Name:</b>{{receptionist.name}}</label>
         </div>
@@ -17,7 +21,8 @@
         <div>
             <label><b>Location:</b>{{receptionist.address}}</label>
         </div>
-       
+       </div>
+       </div>
     </div>
     </body>
     </html>
