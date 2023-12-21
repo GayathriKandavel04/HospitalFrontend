@@ -36,9 +36,14 @@ body {
         padding: 10px 20px;
         font-size: 16px;
         cursor: pointer;
+        background-color: gray;
+        margin-left: 230px;
       }
       
       .btn-success {
         background-color: #28a745;
         color: #fff;
+      }
+      h1{
+        text-align: center;
       }

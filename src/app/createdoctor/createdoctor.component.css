@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://cdn.wallpapersafari.com/98/44/pW4bT5.jpg);
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/022/645/606/small_2x/red-heart-with-stethoscope-generate-ai-photo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -16,7 +16,11 @@ body {
   .i{
     text-align: center;
   }
-
+.btn{
+  align-items: center;
+  margin-left: 230px;
+  background-color: rgb(252, 58, 58);
+}
 .form-container {
   max-width: 600px;
   width: 80%;
