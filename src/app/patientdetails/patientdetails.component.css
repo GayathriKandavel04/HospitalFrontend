@@ -1,34 +1,43 @@
-body {
-  background-image: url(https://wallpapers.com/images/hd/old-male-patient-s-heartbeat-4mnv01uavg9eq2fr.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+  body {
     margin: 0;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .background-image {
+    background: url('https://wallpapers.com/images/hd/old-male-patient-s-heartbeat-4mnv01uavg9eq2fr.jpg') ;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-  .col-md-6 {
-    background-color: rgba(255, 255, 255, 0.8); /* Set background color and opacity for the form */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: left;
-  }
-  div {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 400px;
-    text-align: left;
   }
   
-  label {
+  .details-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 70px;
+    margin-left: -60%;
+    border-radius: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .details h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .details label {
     font-weight: bold;
+  }
+  
+  .details div {
+    margin-bottom: 10px;
   }

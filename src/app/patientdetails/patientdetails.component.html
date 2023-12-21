@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patient List</title>
+  <title>Doctor List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- Link to your external CSS file -->
 </head>
 <body>
-
-<div>
-    <div class="col-md-6 offset-md-3">
+  <div class="background-image">
+    <div class="details-container">
+      <div class="details">
+        <h2> Patient Details:{{patient.patient_name}} </h2>
+        <div>
         <label><b>Patient Name:</b></label>{{patient.patient_name}}
     </div>
     <div>
@@ -26,6 +30,8 @@
     <div>
         <label><b>Mobile no:</b></label>{{patient.mobileno}}
     </div>
+</div>
+</div>
 </div>
 </body>
 </html>
