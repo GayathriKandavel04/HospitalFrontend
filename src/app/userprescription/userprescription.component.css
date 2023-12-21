@@ -1,0 +1,47 @@
+body {
+  background-image: url(https://img.freepik.com/free-photo/stethoscope-pen-blank-prescription-pad-medicine-pharmacy-concept-empty-medical-form-ready-be-used-modern-medical-information-technology_1150-44753.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  .prescription-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .patient-name, .doctor-name, .description, .injection, .amount {
+    margin-bottom: 8px;
+  }
+  
+  .amount {
+    font-weight: bold;
+    color: #e44d26; /* Adjust the color to your preference */
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

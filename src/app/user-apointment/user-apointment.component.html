@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Appointments</title>
+</head>
+<body>
+<div class="form-container">
+<form (ngSubmit) = "onSubmit()">
+  <div class="form-group">
+      <label>Patient Name</label>
+      <input type="text" class="form-control" id="patientname"[(ngModel)]="appointment.patientname" name="patientname">
+  </div><br>
+  <div class="form-group">
+    <label for="selectBox">Select a appointmentDate:</label>
+  <select class="form-control" placeholder="appointmentDate" id="price"[(ngModel)]="appointment.appointmentDate" name="appointmentDate">
+    <option value="18/12/2023">18/12/2023</option>
+    <option value="19/12/2023">19/12/2023</option>
+    <option value="20/12/2023">20/12/2023</option>
+    <option value="21/12/2023">21/12/2023</option>
+    <option value="22/12/2023">22/12/2023</option>
+    <option value="23/12/2023">23/12/2023</option>
+</select>
+</div><br>
+<div class="form-group">
+  <label for="selectBox">Select a appointmentTime:</label>
+  <select class="form-control" placeholder="appointmentTime" id="price"[(ngModel)]="appointment.appointmentTime" name="appointmentTime">
+                    <option value="10:00-10:30">10:00-10:30</option>
+                    <option value="10:30-11:00">10:30-11:00</option>
+                    <option value="11:00-11:30">11:00-11:30</option>
+                    <option value="11:30-12:00">11:30-12:00</option>
+</select>
+<div class="form-group">
+  <label for="selectBox">Select a doctorname:</label>
+  <select class="form-control" placeholder="doctorname" id="price"[(ngModel)]="appointment.doctorname" name="doctorname">
+                    <option value="Dr.Dharwesh">Dr.Dharwesh</option>
+                    <option value="Dr.Disha">Dr.Disha</option>
+                    <option value="Dr.Gayathri">Dr.Gayathri</option>
+</select>
+</div><br>
+  
+  <div class="form-group">
+      <label>description</label>
+      <input type="text" class="form-control" placeholder="description" id="price"[(ngModel)]="appointment.description" name="description">
+  </div><br>
+  
+
+  
+  <br>
+  <button class ="btn btn-success" type ="submit">Submit</button>&nbsp;
+  <button class ="btn btn-dark" (click)="admindashboard()">back</button>
+</div>
+</form>
+</div>
+</body>
+</html>

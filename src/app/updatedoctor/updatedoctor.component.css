@@ -1,0 +1,52 @@
+body {
+  background-image: url(https://careersplay.com/wp-content/uploads/2022/02/doctor-dp-for-whatsapp-hd-download-free.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; 
+    margin: 0;
+    padding: 0;
+  }
+  .col-md-6 {
+    background-color:transparent; /* Set background color and opacity for the form */
+    border-radius: 10px;
+    box-shadow: 0 0 10px whitesmoke;
+    padding: 20px;
+    text-align: left;
+    margin-left: -9%;
+    color: white;
+    margin-right: -10%;
+  }
+  .name{
+    text-align: center;
+    
+  }
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    
+  margin-right: 50%;
+  
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    color: #fff;
+  }

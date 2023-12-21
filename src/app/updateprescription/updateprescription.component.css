@@ -1,0 +1,44 @@
+body {
+    background-image: url(https://c1.wallpaperflare.com/preview/569/849/199/pills-amoxicillin-capsules-prescription.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa; /* Set background color as needed */
+      margin: 0;
+      padding: 0;
+    }
+    .col-md-6 {
+      background-color: rgba(255, 255, 255, 0.8); /* Set background color and opacity for the form */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: left;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .btn-success {
+      background-color: #28a745;
+      color: #fff;
+    }

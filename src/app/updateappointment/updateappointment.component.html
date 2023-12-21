@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor List</title>
+</head>
+
+<body>
+    <div class="col-md-6 offset-md-3">
+        <h1 class="date">Update Appointment!</h1>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="form-control" id="patientname" [(ngModel)]="appointment.patientname" name="patientname">
+            </div>
+            <div class="form-group">
+                <label>Appointment Date</label>
+                <input type="text" class="form-control" id="appointmentDate" [(ngModel)]="appointment.appointmentDate" name="appointmentDate">
+            </div>
+            <div class="form-group">
+                <label>Appointment Time</label>
+                <input type="text" class="form-control" id="appointmentTime" [(ngModel)]="appointment.appointmentTime" name="appointmentTime">
+            </div>
+            <div class="form-group">
+                <label>Doctor Name</label>
+                <input type="text" class="form-control" id="doctorname" [(ngModel)]="appointment.doctorname" name="doctorname">
+            </div>
+            <div class="form-group">
+                <label for="selectBox">Patient Status:</label>
+                <select class="form-control" id="checkup" [(ngModel)]="appointment.checkup" name="checkup">
+                    <option value="Done">Done</option>
+                    <option value="Waiting">Waiting</option>
+                    <option value="Cancelled">Cancelled</option>
+    
+                    </select>
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" class="form-control" id="description" [(ngModel)]="appointment.description" name="description">
+            </div>
+            <div>
+                <button class="btn btn-info " type="submit">Update</button>
+            </div>
+        </form>
+    </div></body>
+</html>

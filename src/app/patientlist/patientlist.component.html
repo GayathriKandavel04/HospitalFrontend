@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient List</title>
+</head>
+<nav class="navbar navbar-expand-sm  navbar-dark">
+    <ul class="navbar-nav">
+    <li class="nav-item"> 
+      <a routerLink="addpatient" routerLinkActive="active" class="nav-link">Add Patient</a>
+    </li>
+    </ul>
+  </nav>
+<body>
+   
+    <div class="table-container">
+    <table class="table ">
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Blood Group</th>
+                <th>Disease</th>
+                <th>Location</th>
+                <th>Age</th>
+                <th>Mobile no</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let patient of pagedPatient | paginate: { itemsPerPage: pageSize, currentPage: currentPage, totalItems: totalItems }">
+                <td>{{patient.patient_name}}</td>
+                <td>{{patient.blood_group}}</td>
+                <td>{{patient.disease}}</td>
+                <td>{{patient.location}}</td>
+                <td>{{patient.age}}</td>
+                <td>{{patient.mobileno}}</td>
+                <td>
+                    <button (click)="updatePatient(patient.id)" class="btn ">📝</button>
+                    <button (click)="deletePatient(patient.id)" class="btn">🗑️</button>
+                    <button (click)="patientDetails(patient.id)" class="btn" style="margin-left: 10px">👁️‍🗨️</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <pagination-controls (pageChange)="pageChanged($event)" class="my-pagination"></pagination-controls>
+    </div>
+    </body>
+    </html>

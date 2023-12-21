@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        .container{
+            padding: 0;
+            margin: 10;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           background-image: url('https://static7.depositphotos.com/1158045/697/i/450/depositphotos_6970978-stock-photo-girl-headset.jpg');
+           background-size: cover; /* or 'contain' depending on your preference */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            overflow: hidden; 
+}
+.navbar {
+    height: 60px;
+    background-color: gray;
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#name {
+    font-family: "cinzel";
+    font-size: 30px;
+    text-shadow: 5px 5px 5px;
+}
+
+#heading {
+    font-family: "Abril Fatface";
+}
+
+.logo img {
+    height: 60px; /* Adjust the height as needed */
+    width: auto; /* Maintain the aspect ratio */
+}
+
+        iframe{
+    border: 2px solid orange;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+  }
+        ul.wrapper {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            height: 100vh;
+            margin: 10;
+        }
+
+        ul.wrapper li {
+            margin: 0 10px;
+        }
+
+        .icon {
+           
+           
+            align-items: right;
+            text-align: left;
+            position: relative;
+        }
+
+        .icon span.tooltip {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 12px;
+            margin-top: -25px;
+            z-index: 1;
+        }
+
+        .icon:hover span.tooltip {
+            display: block;
+        }
+
+        .icon span i {
+            font-size: 30px;
+        }
+
+        .icon.facebook span i {
+            color: #3b5998;
+        }
+
+        .icon.twitter span i {
+            color: #1da1f2;
+        }
+
+        .icon.instagram span i {
+            color: #e4405f;
+        }
+
+        .icon.github span i {
+            color: #333;
+        }
+
+        .icon.youtube span i {
+            color: #ff0000;
+        }
+        .wrapper{
+            margin: 10;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark top" id="nav-heading">
+        <div class="logo">
+            <img src="./assets/logo1.png" alt="Hospital Logo">
+          </div>
+        <div class="mx-auto order-0">
+          <span class="navbar-brand" id="name">Contact Us</span>
+        </div>
+        
+        <div class="ml-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item"> 
+              <a routerLink="/userhome" routerLinkActive="active" class="nav-link">Home</a></li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container">
+    <h2>Thank you for visting our website !!!.</h2>
+    
+    <p class="paragrapgh">If any quries(or) any feedback regarding our hospital 
+        you can share it<br> with us through the below given email 
+        and phone number.</p>
+    
+
+<h2><b>Our Location</b></h2>
+<p>123 Main Street<br>
+   City, State, ZIP</p>
+   <p>
+    <h2><b>Location:</b></h2>
+    Click on the map for getting hospital's location
+   <div class="map">
+     <iframe src="https://www.google.com/maps/d/embed?mid=1P67B_5BT2x8NcmLtmD2B2-s94Lo&hl=en_US&ehbc=2E312F" width="640" height="480"></iframe>
+   </div>
+   
+    <p>📞: <a href="tel:+1234567890">123-456-7890</a></p>
+    <p>📧:<a href="mailto:gayathrikandavel1232@gmail.com">gayathrikandavel123@gmail.com</a></p>
+</div>
+<div>
+<ul class="wrapper">
+    <h3><b>Follow Us on Social Media!</b></h3>
+    <br>
+    <li class="icon facebook">
+        <span class="tooltip">Facebook</span>
+        <span><i class="fab fa-facebook-f"></i></span>
+    </li>
+    <li class="icon twitter">
+        <span class="tooltip">Twitter</span>
+        <span><i class="fab fa-twitter"></i></span>
+    </li>
+    <li class="icon instagram">
+        <span class="tooltip">Instagram</span>
+        <span><i class="fab fa-instagram"></i></span>
+    </li>
+    <li class="icon github">
+        <a href="https://github.com/GayathriKandavel" target="_blank" rel="noopener noreferrer">
+            <span class="tooltip">Github</span>
+            <span><i class="fab fa-github"></i></span>
+        </a>
+    </li>
+    <li class="icon youtube">
+        <span class="tooltip">Youtube</span>
+        <span><i class="fab fa-youtube"></i></span>
+    </li>
+</ul>
+</div>
+</body>
+</html>

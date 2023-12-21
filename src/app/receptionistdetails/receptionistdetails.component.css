@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/female-receptionist-working-hospital-reception-desk-medical-center-helping-treat-patients-make-consultation-appointments-257326050.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    .col-md-7 {
+        background-color: #ffffff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        border-radius: 8px;
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+    }
+    
+    h2 {
+        color: #007bff; /* RoyalBlue */
+    }
+    
+    label {
+        display: block;
+        margin: 15px 0;
+    }
+    
+    b {
+        color: #28a745; /* Green */
+    }
+    
+    /* Add some hover effect */
+    label:hover {
+        color: #dc3545; /* Red */
+        cursor: pointer;
+    }
+    
+    /* Add some styling for responsiveness */
+    @media screen and (max-width: 768px) {
+        .col-md-7 {
+            width: 90%;
+        }
+    }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor List</title>
+</head>
+  <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+      <ul class="navbar-nav">
+        <li class="nav-item"> 
+        <a routerLink="doctors" routerLinkActive="active" class="nav-link">Doctor List</a>
+      </li>
+      <li class="nav-item"> 
+        <a routerLink="createdoctor" routerLinkActive="active" class="nav-link">Add Doctor</a>
+      </li>
+      <li class="nav-item"> 
+        <a routerLink="book-appointment" routerLinkActive="active" class="nav-link">Appointments</a>
+      </li>
+      </ul>
+    </nav>
+    <body>
+      <div class="table-container">
+        <table class="table ">
+      <thead>
+          <tr>
+            <th>Image</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>LicenseNumber</th>
+              <th>Speciliazation</th>
+              <th>Location</th>
+              <th>Description</th>
+              <th>Experience</th>
+          </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let doctor of pagedDoctor | paginate: { itemsPerPage: pageSize, currentPage: currentPage, totalItems: totalItems }">
+            <td> <img [src]="doctor.image"  alt="Doctor Image" height="90" width="120" /> </td>
+              <td>{{doctor.firstname}}</td>
+              <td>{{doctor.lastname}}</td>
+              <td>{{doctor.licenseNumber}}</td>
+              <td>{{doctor.speciliazation}}</td>
+              <td>{{doctor.location}}</td>
+              <td>{{doctor.description}}</td>
+              <td>{{doctor.experience}}</td>
+          </tr>
+      </tbody>
+  </table>
+  <pagination-controls (pageChange)="pageChanged($event)" class="my-pagination"></pagination-controls>
+  </div>
+  
+  </body>
+  </html>
+
+
+  

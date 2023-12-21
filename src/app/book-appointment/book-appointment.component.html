@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment List</title>
+</head>
+      <body>
+        <div class="table-container">
+            <table class="table ">
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Appointment Date</th>
+                <th>Appointment Time</th>
+                <th>Doctor Name</th>
+                <th>Description</th>
+                <th>Check up</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let appointment of pagedAppointment | paginate: { itemsPerPage: pageSize, currentPage: currentPage, totalItems: totalItems }">
+                <td>{{appointment.patientname}}</td>
+                <td>{{appointment.appointmentDate}}</td>
+                <td>{{appointment.appointmentTime}}</td>
+                <td>{{appointment.doctorname}}</td>
+                <td>{{appointment.description}}</td>
+                <td>{{appointment.checkup}}</td>
+                <td>
+                    <button (click)="updateAppointment(appointment.id)" class="btn btn-info">Check Up</button>
+                    <button (click)="deleteAppointment(appointment.id)" class="btn">🗑️</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <pagination-controls (pageChange)="pageChanged($event)" class="my-pagination"></pagination-controls>
+    </div>
+    
+    </body>
+</html>

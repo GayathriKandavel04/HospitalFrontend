@@ -1,0 +1,37 @@
+
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+    <ul class="navbar-nav">
+    <li class="nav-item"> 
+      <a routerLink="userappointment" routerLinkActive="active" class="nav-link">Book Appointments</a>
+    </li>
+    </ul>
+  </nav>
+<body>
+    
+    <div class="table-container">
+        <table class="table ">
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Appointment Date</th>
+                <th>Appointment Time</th>
+                <th>Doctor Name</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let appointment of pagedAppointment | paginate: { itemsPerPage: pageSize, currentPage: currentPage, totalItems: totalItems }">
+                <td>{{appointment.patientname}}</td>
+                <td>{{appointment.appointmentDate}}</td>
+                <td>{{appointment.appointmentTime}}</td>
+                <td>{{appointment.doctorname}}</td>
+                <td>{{appointment.description}}</td>
+                <td>{{appointment.checkup}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <pagination-controls (pageChange)="pageChanged($event)" class="my-pagination"></pagination-controls>
+    </div>
+    
+    </body>

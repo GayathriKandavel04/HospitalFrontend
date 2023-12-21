@@ -1,0 +1,114 @@
+
+<body>
+  <div class="container">
+    <br>
+    <br>
+
+    <mat-card class="example-card-header mb-2">
+     
+      <p class="header-card-text">Add Patient</p>
+    </mat-card>
+    <mat-card class="example-card">
+      <mat-card-content>
+        <div class="row">
+          <form *ngIf="patientForm" [formGroup]="patientForm">
+              <!-- ... other form fields ... -->
+              <div class="row">
+                <label class="col-2 label">Patient Name</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Patient Name</mat-label>
+                  <input matInput placeholder="Placeholder" formControlName="patient_name">
+                  <mat-error *ngIf="patientForm.get('patient_name')?.hasError('required')">
+                    Patient Name is required
+                  </mat-error>
+                </mat-form-field>
+            
+                <label class="col-2 label">Blood Group</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Blood Group</mat-label>
+                  <mat-select formControlName="blood_group" ngDefaultControl>
+                      <mat-option value="O+">O+</mat-option>
+                      <mat-option value="O-">O-</mat-option>
+                      <mat-option value="B+">B+</mat-option>
+                      <mat-option value="B-">B-</mat-option>
+                      <mat-option value="A+">A+</mat-option>
+                      <mat-option value="A-">A-</mat-option>
+                      <mat-option value="A1B+">A1B+</mat-option>
+                      <mat-option value="AB+">AB+</mat-option>
+                      <mat-option value="AB-">AB-</mat-option>
+                      <mat-option value="A1B-">A1B-</mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="patientForm.get('blood_group')?.hasError('required')">
+                    Blood Group is required
+                  </mat-error>
+                </mat-form-field>
+            
+                <label class="col-2 label">Disease</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Disease</mat-label>
+                  <input matInput placeholder="Placeholder" formControlName="disease">
+                  <mat-error *ngIf="patientForm.get('disease')?.hasError('required')">
+                    Disease is required
+                  </mat-error>
+                </mat-form-field>
+            
+                <label class="col-md-2 label">Location</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Select</mat-label>
+                  <mat-select formControlName="location" ngDefaultControl>
+                      <mat-option value="Andhra Pradesh">Andhra Pradesh</mat-option>
+                      <mat-option value="Assam">Assam</mat-option>
+                      <mat-option value="Arunachal Pradesh">Arunachal Pradesh</mat-option>
+                      <mat-option value="Bihar">Bihar</mat-option>
+                      <mat-option value="Chhattisgarh">Chhattisgarh</mat-option>
+                      <mat-option value="Goa">Goa</mat-option>
+                      <mat-option value="Gujarat">Gujarat</mat-option>
+                      <mat-option value="Haryana">Haryana</mat-option>
+                      <mat-option value="Himachal Pradesh">Himachal Pradesh</mat-option>
+                      <mat-option value="Jharkhand">Jharkhand</mat-option>
+                      <mat-option value="Karnataka">Karnataka</mat-option>
+                      <mat-option value="Kerala">Kerala</mat-option>
+                      <mat-option value="Madhya Pradesh">Madhya Pradesh</mat-option>
+                      <mat-option value="Maharashtra">Maharashtra</mat-option>
+                      <mat-option value="Manipur">Manipur</mat-option>
+                      <mat-option value="Meghalaya">Meghalaya</mat-option>
+                      <mat-option value="TamilNadu">TamilNadu</mat-option>
+                      <mat-option value="Odisha">Odisha</mat-option>
+                  </mat-select>
+                  <mat-error *ngIf="patientForm.get('location')?.hasError('required')">
+                    Location is required
+                  </mat-error>
+                </mat-form-field>
+            
+                <label class="col-2 label">Age</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Age</mat-label>
+                  <input matInput placeholder="Placeholder" formControlName="age">
+                  <mat-error *ngIf="patientForm.get('age')?.hasError('required')">
+                    Age is required
+                  </mat-error>
+                </mat-form-field>
+            
+                <label class="col-2 label">Mobile no</label>
+                <mat-form-field class="col-10" appearance="outline">
+                  <mat-label>Mobile no</mat-label>
+                  <input matInput placeholder="Placeholder" formControlName="mobileno">
+                  <mat-error *ngIf="patientForm.get('mobileno')?.hasError('required')">
+                    Mobile no is required
+                  </mat-error>
+                </mat-form-field>
+              </div>
+            </form>
+            
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <div class="button">
+      <button class="btn" (click)="onSubmit()" mat-raised-button style="background: #43db52">
+        Add
+      </button>
+    </div>
+  </div>
+
+</body>

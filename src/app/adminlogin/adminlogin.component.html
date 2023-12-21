@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Doctor</title>
+</head>
+    
+<body>
+    <div class="box">
+        <div class="container">
+    
+            <div class="top">
+                <span>Have an account?</span>
+                <header>ADMIN LOGIN</header>
+                <br>
+            </div>
+            <form (ngSubmit)="OnSubmit()">
+            <div class="input-field">
+                <input type="text" [(ngModel)]="userName" [ngModelOptions]="{standalone: true}" class="input" placeholder="Admin Name" id="">
+                <i class='bx bx-user' ></i>
+            </div>
+    
+            <div class="input-field">
+                <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="input" placeholder="Password" id="">
+                <i class='bx bx-lock-alt'></i>
+            </div>
+    
+            <div class="input-field">
+                <input type="submit" class="submit" value="Login" id="" />
+            </div>
+    
+            <div class="two-col">
+                <div class="one">
+                   <input type="checkbox" name="" id="check">
+                   <label for="check"> Remember Me</label>
+                </div>
+                <div>
+                    <button (click)="goToHome()" class="btn btn-custom">&larr;Back To Home </button>
+    
+                </div>
+                
+    </div>
+    </form>
+    </div>
+    </div>
+    </body>
+    </html>

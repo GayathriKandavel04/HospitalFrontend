@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor List</title>
+</head>
+
+<body>
+<div class="col-md-6 offset-md-3">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Patient Name</label>
+            <input type="text" class="form-control" id="patientName" [(ngModel)]="prescription.patientName" name="patientName">
+        </div>
+        <div class="form-group">
+            <label>Doctor Name</label>
+            <input type="text" class="form-control" id="doctorName" [(ngModel)]="prescription.doctorName" name="doctorName">
+        </div>
+        <div class="form-group">
+            <label>Description</label>
+            <input type="text" class="form-control" id="description" [(ngModel)]="prescription.description" name="description">
+        </div>
+        <div class="form-group">
+            <label for="selectBox">Status of Injection:</label>
+          <select class="form-control" placeholder="injection" id="injection"[(ngModel)]="prescription.injection" name="injection">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+        </div><br>
+        <div class="form-group">
+            <label>Amount</label>
+            <input type="text" class="form-control" id="amount" [(ngModel)]="prescription.amount" name="amount">
+        </div>
+        <div class="form-group">
+            <label for="selectBox">Payment:</label>
+          <select class="form-control" placeholder="status" id="status"[(ngModel)]="prescription.status" name="status">
+            <option value="Yes">Done</option>
+            <option value="No">Pending</option>
+        </select>
+        </div><br>
+        <div>
+            <button class="btn btn-success" type="submit">Update</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

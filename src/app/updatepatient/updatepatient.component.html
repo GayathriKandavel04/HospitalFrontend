@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor List</title>
+</head>
+<body>
+<div class="col-md-6 offset-md-3">
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Patient Name</label>
+            <input type="text" class="form-control" id="patient_name" [(ngModel)]="patient.patient_name" name="patient_name">
+        </div>
+        <div class="form-group">
+            <label>Blood Group</label>
+            <input type="text" class="form-control" id="blood_group" [(ngModel)]="patient.blood_group" name="blood_group">
+        </div>
+      
+        <div class="form-group">
+            <label>Problem</label>
+            <input type="text" class="form-control" id="disease" [(ngModel)]="patient.disease" name="disease">
+        </div>
+        <div class="form-group">
+            <label for="selectBox">Select a Location:</label>
+            <select class="form-control" placeholder="location" id="price"[(ngModel)]="patient.location" name="location">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                              <option value="Assam">Assam</option>
+                              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                              <option value="Bihar">Bihar</option>
+                              <option value="Chhattisgarh">Chhattisgarh</option>
+                              <option value="Goa">Goa</option>
+                              <option value="Gujarat">Gujarat</option>
+                              <option value="Haryana">Haryana</option>
+                              <option value="Jharkhand">Jharkhand</option>
+                              <option value="Karnataka">Karnataka</option>
+                              <option value="Kerala">Kerala</option>
+                              <option value="Maharashtra">Maharashtra</option>
+                              <option value="TamilNadu">TamilNadu</option>
+          </select>
+          </div><br>
+        <div class="form-group">
+            <label>Age</label>
+            <input type="text" class="form-control" id="age" [(ngModel)]="patient.age" name="age">
+        </div>
+        <div class="form-group">
+            <label>Mobile no</label>
+            <input type="text" class="form-control" id="mobileno" [(ngModel)]="patient.mobileno" name="mobileno">
+        </div>
+        <div>
+            <button class="btn btn-success" type="submit">Update</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

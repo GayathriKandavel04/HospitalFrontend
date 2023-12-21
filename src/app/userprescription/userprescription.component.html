@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prescription List</title>
+</head>
+<body>
+    
+  <div *ngFor="let prescription of prescriptions" class="prescription-item">
+    <h1>Prescription Details</h1>
+      <div class="patient-name"><b>Patient Name:</b>{{ prescription.patientName }}</div>
+      <div class="doctor-name"><b>Doctor Name:</b>{{ prescription.doctorName }}</div>
+      <div class="description"><b>Description:</b>{{ prescription.description }}</div>
+      <div class="injection"><b>Inection Status:</b>{{ prescription.injection }}</div>
+      <div class="amount"><b>Amount:</b>{{ prescription.amount }}</div>
+      <button (click)="payNow(prescription)">Pay amount</button>
+    </div>
+      
+      
+    
+    </body>
+    </html>
+    

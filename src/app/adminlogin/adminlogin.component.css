@@ -1,0 +1,102 @@
+*{
+    font-family: 'poppins' ,sans-serif;
+}
+body{
+    background-image: url(https://www.shutterstock.com/image-photo/business-woman-digital-security-interface-260nw-2168045347.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    
+}
+
+	.btn-custom {
+        background-color:transparent; /* White background color */
+       
+        font-family: 'Poppins', sans-serif; /* Poppins font-family */
+        /* Black border (optional, add or remove as needed) */
+        padding: 10px 20px; /* Adjust padding as needed */
+        cursor: pointer;
+        border-radius: 3px; /* Optional: Add border-radius for rounded corners */
+        /* Add any additional styles you may need */
+    }
+span{
+    color: #131212;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+header{
+    color: #090909;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.input-field .input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    border-radius: 30px;
+    color: #161515;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(11, 11, 11, 0.1);
+    outline: none;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+i{
+    position: relative;
+    top: 0px;
+    left: 17px;
+    color: #151515;
+}
+::-webkit-input-placeholder{
+    color: #030303;
+}
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 100%;
+    color: black;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    transition: .3s ;
+}
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col{
+    display: flex;
+        align-items: center; /* Align items vertically center */
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 0.9rem;
+}
+.one{
+    display: flex;
+}
+label a{
+    text-decoration: none;
+    color: #101010;
+}

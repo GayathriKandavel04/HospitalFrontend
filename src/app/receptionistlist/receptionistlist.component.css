@@ -1,0 +1,67 @@
+
+  
+
+  
+ /* patientlist.component.css */
+
+body {
+  background-image: url(https://img.freepik.com/premium-photo/image-hospital-reception-area-where-patients-check_933496-11228.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+
+.table-container {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+}
+
+.table th{
+  background-color: rgb(139, 140, 140);
+  text-align: center;
+}
+.table td {
+  text-align: center;
+  
+}
+
+.my-pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Optional: Style for the delete button */
+.btn-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+

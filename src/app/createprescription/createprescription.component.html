@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Doctor</title>
+</head>
+<body>
+<div class="form-container">
+<form (ngSubmit) = "onSubmit()">
+  <div class="form-group">
+      <label>Patient Name</label>
+      <input type="text" class="form-control" id="patientName"[(ngModel)]="prescription.patientName" name="patientName">
+  </div><br>
+  <div class="form-group">
+      <label>Doctor Name</label>
+      <input type="text" class="form-control" id="doctorName"[(ngModel)]="prescription.doctorName" name="doctorName">
+  </div><br>
+  <div class="form-group">
+      <label>Description</label>
+      <input type="text" class="form-control" placeholder="description" id="price"[(ngModel)]="prescription.description" name="description">
+  </div><br>
+  <div class="form-group">
+    <label for="selectBox">Injection Status:</label>
+  <select class="form-control" placeholder="injection" id="price"[(ngModel)]="prescription.injection" name="injection">
+    <option value="Yes">yes</option>
+    <option value="No">No</option>
+</select>
+</div><br>
+<div class="form-group">
+  <label>Amount</label>
+  <input type="number" class="form-control" placeholder="amount" id="price"[(ngModel)]="prescription.amount" name="amount">
+</div><br>
+  
+  <br>
+  <button class ="btn btn-success" type ="submit">Submit</button>&nbsp;
+  <button class ="btn btn-dark" (click)="admindashboard()">back</button>
+
+</form>
+</div>
+</body>
+</html>

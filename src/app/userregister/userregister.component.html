@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Ludiflex | Login</title>
+
+
+
+</head>
+<body>
+    
+   <div class="box">
+    <div class="container">
+        <form #userRegisterForm="ngForm">
+
+        <div class="top">
+            <span>Have an account?</span>
+            <header>USER REGISTER</header>
+        </div>
+
+        <div class="input-field">
+            <!-- Add 'required' attribute for mandatory fields -->
+            <input type="text" [(ngModel)]="userName" name="userName" class="input" placeholder="Name" required>
+            <i class='bx bx-user'></i>
+            <!-- Display error message if the field is touched and empty -->
+            <div *ngIf="userRegisterForm.controls['userName'].invalid && userRegisterForm.controls['userName'].touched">
+              Name is required.
+            </div>
+          </div>
+
+          <div class="input-field">
+            <!-- Add 'email' validation for the email field -->
+            <input type="text" [(ngModel)]="email" name="email" class="input" placeholder="Email" required email>
+            <i class='bx bx-envelope'></i>
+            <!-- Display error message if the field is touched and has an invalid email format -->
+            <div *ngIf="userRegisterForm.controls['email'].invalid && userRegisterForm.controls['email'].touched">
+              Enter a valid email address.
+            </div>
+          </div>
+        
+          <div class="input-field">
+            <!-- Add 'minlength' validation for the password field -->
+            <input type="Password" [(ngModel)]="password" name="password" class="input" placeholder="Password" required minlength="8">
+            <i class='bx bx-lock-alt'></i>
+            <!-- Display error message if the field is touched and has less than 8 characters -->
+            <div *ngIf="userRegisterForm.controls['password'].invalid && userRegisterForm.controls['password'].touched">
+              Password must be at least 8 characters.
+            </div>
+          </div>
+        
+          <div class="input-field">
+            <!-- Add 'pattern' validation for the phoneNo field (assuming a numeric phone number) -->
+            <input type="text" [(ngModel)]="phoneNo" name="phoneNo" class="input" placeholder="Phone Number" required pattern="[0-9]+">
+            <i class='bx bx-lock-alt'></i>
+            <!-- Display error message if the field is touched and has non-numeric characters -->
+            <div *ngIf="userRegisterForm.controls['phoneNo'].invalid && userRegisterForm.controls['phoneNo'].touched">
+              Enter a valid phone number.
+            </div>
+          </div>
+
+          <div class="input-field">
+            <input type="submit" class="submit" value="Register" id="" (click)="save()" [disabled]="userRegisterForm.invalid">
+          </div>
+
+        <div class="two-col">
+            <div class="one">
+               <input type="checkbox" name="" id="check">
+               <label for="check"> Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="http://localhost:4200/userlogin">Log in ..</a></label>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>  
+</body>
+</html>

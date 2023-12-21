@@ -1,0 +1,49 @@
+body{
+  background-image: url(https://images.ctfassets.net/co0pvta7hzrh/1LQi8VNn4AwwY499yq7ixV/5d9aca30beba4367f98746506fc7a5c7/appointment_request_form_Thumbnail.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+.date{
+text-align: left;
+text-decoration: 20% solid black;
+}
+.btn{
+align-items: center;
+margin-left: 20%;
+}
+.form-group{
+align-items: center;
+margin-left: -10%;
+margin-right: 30%;
+}
+.footer
+{
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(7, 7, 140);
+  color:white;
+}
+footer ul {
+  margin-bottom: 10px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}

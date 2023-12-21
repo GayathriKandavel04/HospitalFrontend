@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!-- Link to your external CSS file -->
+</head>
+<body>
+  <div class="background-image">
+    <div class="details-container">
+      <div class="details">
+        <h2> 👨‍⚕️DR.{{doctor.firstname}} Details</h2>
+        <div>
+          <label><b>First Name:</b></label>{{doctor.firstname}}
+        </div>
+        <div>
+          <label><b>Last Name:</b></label>{{doctor.lastname}}
+        </div>
+        <div>
+          <label><b>License Number:</b></label>{{doctor.licenseNumber}}
+        </div>
+        <div>
+            <label><b>Specialization:</b></label>{{doctor.speciliazation}}
+
+        </div>
+        <div>
+          <label><b>Location:</b></label>{{doctor.location}}
+        </div>
+        <div>
+          <label><b>Description:</b></label>{{doctor.description}}
+        </div>
+        <div>
+          <label><b>Experience:</b></label>{{doctor.experience}}
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

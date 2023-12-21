@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.background-image {
+  background: url('https://e0.pxfuel.com/wallpapers/617/560/desktop-wallpaper-best-clinics-for-proctology-in-europe-medical-equipment.jpg') ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.details-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.details h2 {
+  text-align: center;
+  color: #333;
+}
+
+.details label {
+  font-weight: bold;
+}
+
+.details div {
+  margin-bottom: 10px;
+}
